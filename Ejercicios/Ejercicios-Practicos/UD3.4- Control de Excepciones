@@ -1,0 +1,16 @@
+'''
+	
+	v1.0 Daniel Oliveira Vidal
+	
+'''
+
+print('Vamos a hacer una división')
+
+try:
+	a = int(input('Dime el dividendo; '))
+	b = int(input('Dime el divisor: '))
+	print(a / b)
+except:
+	print('No se puede dividir entre 0')
+	
+print('Hemos terminado de operar')
