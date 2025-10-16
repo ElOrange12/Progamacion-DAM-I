@@ -1,6 +1,3 @@
-archivo = open('blog.txt','r')
+import json
 
-lineas = archivo.readlines()
-
-for linea in lineas:
-	print(linea)
+archivo = json.load('blog.json','r')
