@@ -13,17 +13,16 @@ ventana = tk.Tk()
 
 def insertar():
 	cursor.execute('''
-  INSERT INTO clientes
-  VALUES(
-    NULL,
-    "12345678Z",
-    "Daniel",
-    "Oliveira Vidal",
-    "info@elorange12.com"
-  );
-''')
+		INSERT INTO clientes VALUES(
+			NULL,
+      		"'''+dninie.get()+'''",
+      		"'''+nombre.get()+'''",
+     		"'''+apellidos.get()+'''",
+      		"'''+email.get()+'''"
+      	);
+  ''')
 
-	conexion.commit()
+conexion.commit()
 	
 
 marco = tk.Frame(ventana)
