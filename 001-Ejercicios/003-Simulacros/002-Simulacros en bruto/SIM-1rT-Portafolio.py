@@ -1,28 +1,27 @@
 '''
 	Portafolio
 	v1.0 Daniel Oliveira Vidal
-
+	Este programa es un CRUD conectado a una base de datos.
 '''
 import mysql.connector
 
 conexion = mysql.connector.connect(
 	host='localhost',
-	user='danielo',
-	password='Portafolio2526$',
-	database='portafolio'
+	user='creadorportafolio',
+	password='PortafolioExamen2526$',
+	database='portafolioexamen'
 )
 cursor = conexion.cursor()
 
 def insertarPieza(titulo, descripcion, imagen, url, id_categoria):
 	cursor.execute('''
-  INSERT INTO pieza
+  INSERT INTO piezaportafolio
   VALUES(
-    NULL,
-    "'''+titulo+'''",
-    "'''+descripcion+'''",
-    "'''+imagen+'''",
-    "'''+url+'''",
-    '''+id_categoria+'''
+	NULL,
+	"'''+titulo+'''",
+	"'''+descripcion+'''",
+	"'''+fecha+'''",
+	'''+id_categoria+'''
   );
 ''')
 
@@ -51,11 +50,10 @@ while True:
 	if respuesta == 1:
 		titulo = input('Dime el titulo de la pieza: ')
 		descripcion = input('Dime la descripción de la pieza: ')
-		imagen = input('Dime el nombre de la imagen de la pieza: ')
-		url = input('Dime la url de la pieza: ')
+		fecha = input('Dime la fecha de añadido de la pieza: ')
 		id_categoria = input('Dime el ID de la categoría: ')
 	
-		insertarPieza(titulo, descripcion, imagen, url, id_categoria)
+		insertarPieza(titulo, descripcion, fecha, id_categoria)
 		print('')
 
 	elif respuesta == 2:
@@ -68,18 +66,20 @@ while True:
 		print('')
 		
 	elif respuesta == 3:
+		print('')
+		print('Vamos a actualizar una pieza de la tabla:')
+		print('')	
 		identificador = input("Introduce el Identificador a actualizar: ")
 		titulo = input("Introduce el titulo de la nueva pieza: ")
 		descripcion = input("Introduce la descripcion de la nueva pieza: ")
 		fecha = input("Introduce la fecha de la nueva pieza: ")
-		imagen = input("Introduce el nombre de la imagen de la nueva pieza: ")
+		id_categoria = input('Introduce el ID de la categoría: ')
 		cursor.execute('''
-		  UPDATE piezas 
+		  UPDATE pieza 
 		  SET
 		  titulo = "'''+titulo+'''",
 		  descripcion = "'''+descripcion+'''",
 		  fecha = "'''+fecha+'''",
-		  imagen = "'''+imagen+'''"
 		  WHERE Identificador = '''+identificador+'''
 		''')
 		print('')
@@ -98,4 +98,3 @@ while True:
 	else:
 		print('Esa no es una opción correcta.')
 		print('')
-
