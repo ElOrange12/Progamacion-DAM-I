@@ -7,6 +7,6 @@ import math as matematicas
 
 radio = 2
 
-circunferencía = 2 * matematicas.pi * radio
+circunferencia = 2 * matematicas.pi * radio
 
-print(cincunferencía)
+print(circunferencia)

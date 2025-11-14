@@ -1,7 +1,7 @@
 '''
-	CRUD clientes
+	Mini CRUD clientes
 	v1.0
-	Este programa es un ejemplo de CRUD de una lista de clientes
+	Este programa es un ejemplo de un mini CRUD de una lista de clientes
 '''
 
 class Cliente():
@@ -25,7 +25,7 @@ print(cliente1)
 clientes = []
 
 while True:
-	print('1.-Insertar un cliente\n2.-Listar clientes\n3.-Actualizar clientes\n4.-Eliminar clientes')
+	print('1.-Insertar un cliente\n2.-Listar clientes')
 	respuesta = int(input('Elige una opción: '))
 	
 	if respuesta == 1:
@@ -42,10 +42,3 @@ while True:
 	elif respuesta == 2:
 		for cliente in clientes:
 			print(cliente)
-	
-	elif respuesta == 3:
-		
-	
-	elif respuesta == 4:
-		
-	

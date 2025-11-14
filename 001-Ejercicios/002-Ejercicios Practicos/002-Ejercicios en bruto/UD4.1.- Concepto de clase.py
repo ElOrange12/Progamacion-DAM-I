@@ -13,5 +13,5 @@ class Jugador():
 	def setNombre(self, nuevonombre):
 		self.nombre = nuevonombre
 		
-	def mostrarNombre():
+	def mostrarNombre(self):
 		print(self.nombre)		

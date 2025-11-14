@@ -9,7 +9,7 @@ fechahoy = fechas.date(2025-11-14)
 
 print(fechahoy)
 
-diadelasemana = weekday()
+diadelasemana = fechas.weekday()
 print(diadelasemana)
 
 mi_edad = 18
