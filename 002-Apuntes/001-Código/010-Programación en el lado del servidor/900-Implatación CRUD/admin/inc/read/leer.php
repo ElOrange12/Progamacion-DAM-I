@@ -12,13 +12,13 @@
 		$resultado = $conexion->query($sql);
 
 		$resultado = $conexion->query($sql);
-		while ($fila = $resultado->fetch_assoc()) {
+		while ($fila = $resultado->fetch_assoc()){
 			echo "<tr>";
-				echo "<td>".fila['titulo']."</td>";
-				echo "<td>".fila['fecha_publicación']."</td>";
-				echo "<td>".fila['autor_id']."</td>";
-				echo "<td>".fila['contenido']."</td>";
-			echo "</tr>"
+				echo "<td>".$fila['titulo']."</td>";
+				echo "<td>".$fila['fecha_publicacion']."</td>";
+				echo "<td>".$fila['autor_id']."</td>";
+				echo "<td>".$fila['contenido']."</td>";
+			echo "</tr>";
 		}
 
 		$conexion->close();
