@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Diagrama exportado</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f3f7;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.page {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  width: 556.3437499999998px;
+  height: 398.82813262939436px;
+  overflow: visible;
+}
+
+/* formas básicas */
+.shape {
+  position: absolute;
+  min-width: 120px;
+  min-height: 40px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.shape.rectangle {
+  border-radius: 4px;
+}
+
+.shape.pill {
+  border-radius: 999px;
+}
+
+.shape.circle {
+  border-radius: 999px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  justify-content: center;
+}
+
+/* texto libre */
+.shape.text {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+/* base de datos */
+.shape.db {
+  min-width: 120px;
+  min-height: 60px;
+  padding-top: 20px;
+  border-radius: 60px / 16px;
+  background: linear-gradient(180deg, #e5e7eb 0%, #ffffff 40%, #e5e7eb 100%);
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+.shape.db::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+  background: radial-gradient(circle at 50% 30%, #ffffff 0%, #e5e7eb 70%);
+}
+.shape.db::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(156, 163, 175, 0.6);
+  border-top: none;
+  background: radial-gradient(circle at 50% 70%, #e5e7eb 0%, #d1d5db 70%);
+}
+
+/* entidades ER */
+.shape.entity {
+  width: 220px;
+  min-height: 80px;
+  background: #ffffff;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 0;
+}
+.entity-header {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+.entity-properties {
+  flex: 1;
+  padding: 4px 4px 0 4px;
+}
+.entity-property {
+  display: grid;
+  grid-template-columns: 14px 1fr 14px;
+  align-items: center;
+  column-gap: 4px;
+  padding: 2px 0;
+}
+.entity-property .property-name {
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* puertos */
+.port {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #111827;
+  background: #ffffff;
+}
+.port-left { justify-self: start; }
+.port-right { justify-self: end; }
+
+/* flechas rectas */
+.arrow {
+  position: absolute;
+  height: 2px;
+  background: #111827;
+  transform-origin: 0 50%;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+.arrow-double::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+
+/* flechas ortogonales */
+.ortho-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ortho-arrow .ortho-seg {
+  position: absolute;
+  background: #111827;
+}
+.ortho-seg.seg-horizontal { height: 2px; }
+.ortho-seg.seg-vertical { width: 2px; }
+.ortho-arrowhead {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.ortho-arrowhead.dir-right {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #111827;
+}
+.ortho-arrowhead.dir-left {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #111827;
+}
+.ortho-arrowhead.dir-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #111827;
+}
+.ortho-arrowhead.dir-up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #111827;
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="shape text" style="left:85.875px;top:72.359375px;width:31.671874999999986px;height:19.999999999999993px;">Front</div>
+<div class="shape rectangle" style="left:40.578125px;top:98.26562499999997px;width:119.99999999999994px;height:39.999992370605455px;">CSS</div>
+<div class="shape rectangle" style="left:40.59375px;top:137.07811737060544px;width:119.99999999999994px;height:39.999999999999986px;">HTML</div>
+<div class="shape rectangle" style="left:41.1875px;top:175.3124923706054px;width:119.99999999999994px;height:39.999999999999986px;">JS?</div>
+<div class="shape rectangle" style="left:40px;top:239.42188262939445px;width:119.99999999999994px;height:39.999999999999986px;">PHP/Python</div>
+<div class="shape text" style="left:343.51562499999994px;top:74.71875px;width:37.843749999999986px;height:19.999999999999993px;">Admin</div>
+<div class="shape rectangle" style="left:300.5937499999999px;top:98.82812499999997px;width:119.99999999999994px;height:39.999992370605455px;">CSS</div>
+<div class="shape rectangle" style="left:300.5937499999999px;top:137.65624237060544px;width:119.99999999999994px;height:39.999999999999986px;">HTML</div>
+<div class="shape rectangle" style="left:300.5937499999999px;top:176.4843673706054px;width:119.99999999999994px;height:39.999999999999986px;">JS?</div>
+<div class="shape rectangle" style="left:301.1718749999999px;top:238.84375762939445px;width:119.99999999999994px;height:39.999999999999986px;">PHP/Python</div>
+<div class="shape pill" style="left:169.99999999999994px;top:318.82813262939436px;width:119.99999999999994px;height:39.999999999999986px;">xSQL</div>
+<div class="shape text" style="left:167.28124999999994px;top:130.6562576293945px;width:33.234374999999986px;height:19.99998474121093px;">READ</div>
+<div class="shape text" style="left:452.84374999999983px;top:142.46874237060544px;width:34.140624999999986px;height:19.999999999999993px;">CRUD</div>
+<div class="shape text" style="left:461.65624999999983px;top:159.1874923706054px;width:52.56249999999998px;height:19.999999999999993px;">- CREATE</div>
+<div class="shape text" style="left:147.04687499999994px;top:40px;width:170.09374999999991px;height:19.999999999999993px;">Examen Lenguajes de marcas</div>
+<div class="shape text" style="left:156.46874999999994px;top:220.0156173706054px;width:148.51562499999994px;height:20.000015258789052px;">Examen de programación</div>
+<div class="shape text" style="left:175.64062499999994px;top:148.17186737060544px;width:50.40624999999998px;height:19.999999999999993px;">(INSERT)</div>
+<div class="shape text" style="left:462.14062499999983px;top:171.6718673706054px;width:39.968749999999986px;height:19.999999999999993px;">- READ</div>
+<div class="shape text" style="left:461.64062499999983px;top:184.1718673706054px;width:54.70312499999998px;height:19.999999999999993px;">- UPDATE</div>
+<div class="shape text" style="left:462.14062499999983px;top:196.6718673706054px;width:51.64062499999998px;height:19.999999999999993px;">- DELETE</div>
+<div class="shape text" style="left:195.64062499999994px;top:278.1718826293944px;width:64.21874999999997px;height:19.999999999999993px;">Examen de</div>
+<div class="shape text" style="left:187.64062499999994px;top:291.6718826293944px;width:81.10937499999996px;height:19.999999999999993px;">Base de datos</div>
+<div class="arrow" style="left:197.25698543880355px;top:318.82813262939436px;width:75.59699053176152px;transform:rotate(-2.5932571944021365rad);"></div>
+<div class="arrow" style="left:100.37046055038314px;top:239.42188262939445px;width:24.113525900702125px;transform:rotate(-1.552275417272389rad);"></div>
+<div class="ortho-arrow ortho-arrow-double">
+  <div class="ortho-seg seg-horizontal seg1" style="left:262.7993748779058px;top:318.82813262939436px;width:65.5731252441883px;"></div>
+  <div class="ortho-seg seg-vertical seg2" style="left:328.3725001220941px;top:278.8437576293944px;height:39.98437499999994px;"></div>
+  <div class="ortho-arrowhead ortho-head-end dir-up" style="left:324.3725001220941px;top:270.8437576293944px;"></div>  <div class="ortho-arrowhead ortho-head-start dir-left" style="left:254.7993748779058px;top:314.82813262939436px;"></div>
+</div>
+<div class="ortho-arrow ortho-arrow-double">
+  <div class="ortho-seg seg-horizontal seg1" style="left:360.7791671433045px;top:238.84375762939445px;width:0.20729071339087568px;"></div>
+  <div class="ortho-seg seg-vertical seg2" style="left:360.7791671433045px;top:216.4843673706054px;height:22.359390258789034px;"></div>
+  <div class="ortho-arrowhead ortho-head-end dir-up" style="left:356.7791671433045px;top:208.4843673706054px;"></div>  <div class="ortho-arrowhead ortho-head-start dir-down" style="left:356.9864578566954px;top:238.84375762939445px;"></div>
+</div>
+</div>
+</body>
+</html>

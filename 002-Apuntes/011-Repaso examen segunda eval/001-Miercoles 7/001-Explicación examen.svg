@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="556.3437499999998" height="398.82813262939436" viewBox="0 0 556.3437499999998 398.82813262939436">
+
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; fill: #111827; }
+      .shape-rect { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-entity { fill: #ffffff; stroke: #111827; stroke-width: 2; }
+      .shape-circle { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-pill { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .shape-db { fill: #ffffff; stroke: #9ca3af; stroke-width: 1; }
+      .conn { stroke: #111827; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#111827"/>
+    </marker>
+    <marker id="arrow-start" markerWidth="10" markerHeight="7" refX="0" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#111827"/>
+    </marker>
+  </defs>
+        
+<text x="85.875" y="86.359375">Front</text>
+<rect class="shape-rect" x="40.578125" y="98.26562499999997" width="119.99999999999994" height="39.999992370605455" rx="4" ry="4" />
+<text x="100.57812499999997" y="122.2656211853027" text-anchor="middle">CSS</text>
+<rect class="shape-rect" x="40.59375" y="137.07811737060544" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="100.59374999999997" y="161.07811737060544" text-anchor="middle">HTML</text>
+<rect class="shape-rect" x="41.1875" y="175.3124923706054" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="101.18749999999997" y="199.3124923706054" text-anchor="middle">JS?</text>
+<rect class="shape-rect" x="40" y="239.42188262939445" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="99.99999999999997" y="263.4218826293944" text-anchor="middle">PHP/Python</text>
+<text x="343.51562499999994" y="88.71875">Admin</text>
+<rect class="shape-rect" x="300.5937499999999" y="98.82812499999997" width="119.99999999999994" height="39.999992370605455" rx="4" ry="4" />
+<text x="360.5937499999999" y="122.8281211853027" text-anchor="middle">CSS</text>
+<rect class="shape-rect" x="300.5937499999999" y="137.65624237060544" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="360.5937499999999" y="161.65624237060544" text-anchor="middle">HTML</text>
+<rect class="shape-rect" x="300.5937499999999" y="176.4843673706054" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="360.5937499999999" y="200.4843673706054" text-anchor="middle">JS?</text>
+<rect class="shape-rect" x="301.1718749999999" y="238.84375762939445" width="119.99999999999994" height="39.999999999999986" rx="4" ry="4" />
+<text x="361.1718749999999" y="262.8437576293944" text-anchor="middle">PHP/Python</text>
+<rect class="shape-rect" x="169.99999999999994" y="318.82813262939436" width="119.99999999999994" height="39.999999999999986" rx="19.999999999999993" ry="19.999999999999993" />
+<text x="229.99999999999991" y="342.82813262939436" text-anchor="middle">xSQL</text>
+<text x="167.28124999999994" y="144.6562576293945">READ</text>
+<text x="452.84374999999983" y="156.46874237060544">CRUD</text>
+<text x="461.65624999999983" y="173.1874923706054">- CREATE</text>
+<text x="147.04687499999994" y="54">Examen Lenguajes de marcas</text>
+<text x="156.46874999999994" y="234.0156173706054">Examen de programación</text>
+<text x="175.64062499999994" y="162.17186737060544">(INSERT)</text>
+<text x="462.14062499999983" y="185.6718673706054">- READ</text>
+<text x="461.64062499999983" y="198.1718673706054">- UPDATE</text>
+<text x="462.14062499999983" y="210.6718673706054">- DELETE</text>
+<text x="195.64062499999994" y="292.1718826293944">Examen de</text>
+<text x="187.64062499999994" y="305.6718826293944">Base de datos</text>
+<path class="conn" d="M 197.25698543880355 318.82813262939436 L 132.7430145611964 279.4218826293944" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 100.37046055038314 239.42188262939445 L 100.81703944961686 215.3124923706054" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 262.7993748779058 318.82813262939436 H 328.3725001220941 V 278.8437576293944" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+<path class="conn" d="M 360.9864578566954 238.84375762939445 H 360.7791671433045 V 216.4843673706054" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
+</svg>

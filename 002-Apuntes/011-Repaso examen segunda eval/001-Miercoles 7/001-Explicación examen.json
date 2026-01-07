@@ -1,0 +1,260 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "text",
+      "left": "285.115px",
+      "top": "74.1176px",
+      "width": "",
+      "height": "",
+      "texto": "Front"
+    },
+    {
+      "id": "forma-2",
+      "tipo": "rectangle",
+      "left": "239.826px",
+      "top": "100.016px",
+      "width": "",
+      "height": "",
+      "texto": "CSS"
+    },
+    {
+      "id": "forma-3",
+      "tipo": "rectangle",
+      "left": "239.836px",
+      "top": "138.837px",
+      "width": "",
+      "height": "",
+      "texto": "HTML"
+    },
+    {
+      "id": "forma-4",
+      "tipo": "rectangle",
+      "left": "240.427px",
+      "top": "177.07px",
+      "width": "",
+      "height": "",
+      "texto": "JS?"
+    },
+    {
+      "id": "forma-5",
+      "tipo": "rectangle",
+      "left": "239.245px",
+      "top": "241.181px",
+      "width": "",
+      "height": "",
+      "texto": "PHP/Python"
+    },
+    {
+      "id": "forma-7",
+      "tipo": "text",
+      "left": "542.76px",
+      "top": "76.4706px",
+      "width": "",
+      "height": "",
+      "texto": "Admin"
+    },
+    {
+      "id": "forma-8",
+      "tipo": "rectangle",
+      "left": "499.829px",
+      "top": "100.592px",
+      "width": "",
+      "height": "",
+      "texto": "CSS"
+    },
+    {
+      "id": "forma-9",
+      "tipo": "rectangle",
+      "left": "499.83px",
+      "top": "139.42px",
+      "width": "",
+      "height": "",
+      "texto": "HTML"
+    },
+    {
+      "id": "forma-10",
+      "tipo": "rectangle",
+      "left": "499.83px",
+      "top": "178.247px",
+      "width": "",
+      "height": "",
+      "texto": "JS?"
+    },
+    {
+      "id": "forma-11",
+      "tipo": "rectangle",
+      "left": "500.417px",
+      "top": "240.604px",
+      "width": "",
+      "height": "",
+      "texto": "PHP/Python"
+    },
+    {
+      "id": "forma-12",
+      "tipo": "pill",
+      "left": "369.24px",
+      "top": "320.588px",
+      "width": "",
+      "height": "",
+      "texto": "xSQL"
+    },
+    {
+      "id": "forma-13",
+      "tipo": "text",
+      "left": "366.516px",
+      "top": "132.406px",
+      "width": "",
+      "height": "",
+      "texto": "READ"
+    },
+    {
+      "id": "forma-14",
+      "tipo": "text",
+      "left": "652.078px",
+      "top": "144.219px",
+      "width": "",
+      "height": "",
+      "texto": "CRUD"
+    },
+    {
+      "id": "forma-15",
+      "tipo": "text",
+      "left": "660.891px",
+      "top": "160.937px",
+      "width": "",
+      "height": "",
+      "texto": "- CREATE"
+    },
+    {
+      "id": "forma-16",
+      "tipo": "text",
+      "left": "346.295px",
+      "top": "41.7647px",
+      "width": "",
+      "height": "",
+      "texto": "Examen Lenguajes de marcas"
+    },
+    {
+      "id": "forma-17",
+      "tipo": "text",
+      "left": "355.707px",
+      "top": "221.769px",
+      "width": "",
+      "height": "",
+      "texto": "Examen de programación"
+    },
+    {
+      "id": "forma-19",
+      "tipo": "text",
+      "left": "374.875px",
+      "top": "149.922px",
+      "width": "",
+      "height": "",
+      "texto": "(INSERT)"
+    },
+    {
+      "id": "forma-20",
+      "tipo": "text",
+      "left": "661.375px",
+      "top": "173.422px",
+      "width": "",
+      "height": "",
+      "texto": "- READ"
+    },
+    {
+      "id": "forma-21",
+      "tipo": "text",
+      "left": "660.875px",
+      "top": "185.922px",
+      "width": "",
+      "height": "",
+      "texto": "- UPDATE"
+    },
+    {
+      "id": "forma-22",
+      "tipo": "text",
+      "left": "661.375px",
+      "top": "198.422px",
+      "width": "",
+      "height": "",
+      "texto": "- DELETE"
+    },
+    {
+      "id": "forma-23",
+      "tipo": "text",
+      "left": "394.875px",
+      "top": "279.922px",
+      "width": "",
+      "height": "",
+      "texto": "Examen de"
+    },
+    {
+      "id": "forma-24",
+      "tipo": "text",
+      "left": "386.875px",
+      "top": "293.422px",
+      "width": "",
+      "height": "",
+      "texto": "Base de datos"
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-12",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-4",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-12",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-11",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "ortho"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-11",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-10",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "doble",
+      "estilo": "ortho"
+    }
+  ]
+}

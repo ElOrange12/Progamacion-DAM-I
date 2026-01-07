@@ -1,0 +1,235 @@
+{
+  "formas": [
+    {
+      "id": "forma-1",
+      "tipo": "text",
+      "left": "137px",
+      "top": "65px",
+      "width": "",
+      "height": "",
+      "texto": "Panel admin"
+    },
+    {
+      "id": "forma-2",
+      "tipo": "rectangle",
+      "left": "160.688px",
+      "top": "100.384px",
+      "width": "",
+      "height": "",
+      "texto": "login"
+    },
+    {
+      "id": "forma-3",
+      "tipo": "rectangle",
+      "left": "321.245px",
+      "top": "101.497px",
+      "width": "",
+      "height": "",
+      "texto": "procesalogin"
+    },
+    {
+      "id": "forma-4",
+      "tipo": "rectangle",
+      "left": "481.234px",
+      "top": "100.387px",
+      "width": "",
+      "height": "",
+      "texto": "escritorio (tabla)"
+    },
+    {
+      "id": "forma-5",
+      "tipo": "rectangle",
+      "left": "640.675px",
+      "top": "100.953px",
+      "width": "",
+      "height": "",
+      "texto": "insertar (opcional)"
+    },
+    {
+      "id": "forma-6",
+      "tipo": "text",
+      "left": "493.462px",
+      "top": "71.5px",
+      "width": "",
+      "height": "",
+      "texto": "Read, Delete"
+    },
+    {
+      "id": "forma-7",
+      "tipo": "text",
+      "left": "655.677px",
+      "top": "73.1649px",
+      "width": "",
+      "height": "",
+      "texto": "Insert, Update"
+    },
+    {
+      "id": "forma-8",
+      "tipo": "text",
+      "left": "137.896px",
+      "top": "164.828px",
+      "width": "",
+      "height": "",
+      "texto": "Frontal de la aplicación"
+    },
+    {
+      "id": "forma-9",
+      "tipo": "rectangle",
+      "left": "160.122px",
+      "top": "200.948px",
+      "width": "",
+      "height": "",
+      "texto": "frontpage"
+    },
+    {
+      "id": "forma-10",
+      "tipo": "rectangle",
+      "left": "320.127px",
+      "top": "200.384px",
+      "width": "",
+      "height": "",
+      "texto": "catálogo"
+    },
+    {
+      "id": "forma-11",
+      "tipo": "rectangle",
+      "left": "480.134px",
+      "top": "200.384px",
+      "width": "",
+      "height": "",
+      "texto": "producto"
+    },
+    {
+      "id": "forma-12",
+      "tipo": "rectangle",
+      "left": "641.221px",
+      "top": "201.486px",
+      "width": "",
+      "height": "",
+      "texto": "pedido"
+    },
+    {
+      "id": "forma-13",
+      "tipo": "rectangle",
+      "left": "401.776px",
+      "top": "299.826px",
+      "width": "",
+      "height": "",
+      "texto": "confirmación"
+    }
+  ],
+  "flechas": [
+    {
+      "desde": {
+        "shapeId": "forma-2",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-3",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-3",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-4",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-4",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-5",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-9",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-10",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-10",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-11",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-11",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-12",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-12",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-13",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    },
+    {
+      "desde": {
+        "shapeId": "forma-13",
+        "propId": null,
+        "side": null
+      },
+      "hasta": {
+        "shapeId": "forma-9",
+        "propId": null,
+        "side": null
+      },
+      "tipo": "simple",
+      "estilo": "straight"
+    }
+  ]
+}
