@@ -13,6 +13,6 @@ El código comienza definiendo una lista llamada partidos. Dentro de esta lista,
 
 Posteriormente, el programa intenta realizar dos operaciones de lectura:
 
-1.Acceso directo: Se intenta imprimir el nombre del equipo local del primer partido accediendo al índice 0 de la lista y luego a la clave correspondiente.
+1. Acceso directo: Se intenta imprimir el nombre del equipo local del primer partido accediendo al índice 0 de la lista y luego a la clave correspondiente.
 
-2.Recorrido: Se intenta recorrer la lista para mostrar la información de todos los partidos mediante bucles.
+2. Recorrido: Se intenta recorrer la lista para mostrar la información de todos los partidos mediante bucles.
