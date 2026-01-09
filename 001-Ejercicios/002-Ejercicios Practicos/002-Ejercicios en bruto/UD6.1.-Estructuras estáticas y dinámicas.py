@@ -4,7 +4,6 @@
 	Este programa tiene un diccionario que almacena una serie de partidos y sus caracteristicas
 '''
 
-
 partidos = [
 	{
 		'equipo_local':'Real Madrid',
