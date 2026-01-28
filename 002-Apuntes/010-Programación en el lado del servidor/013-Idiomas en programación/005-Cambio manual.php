@@ -1,0 +1,31 @@
+<?php
+	$idioma['es']['inicio'] = "Inicio";
+	$idioma['es']['sobremi'] = "Sobre mi";
+	$idioma['es']['proyectos'] = "Proyectos";
+	$idioma['es']['contacto'] = "Contacto";
+	
+	$idioma['en']['inicio'] = "Home";
+	$idioma['en']['sobremi'] = "About me";
+	$idioma['en']['proyectos'] = "Proyects";
+	$idioma['en']['contacto'] = "Contact";
+?>
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Multi idioma</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<select>
+			<option value="es">🇪🇦️ Español</option>
+			<option value="en">🇬🇧️ English</option>
+		</select>
+		<h1>Daniel Oliveira Vidal</h1>
+		<nav>
+			<a href=""><?= $idioma['en']['inicio'] ?></a>
+			<a href=""><?= $idioma['en']['sobremi'] ?></a>
+			<a href=""><?= $idioma['en']['proyectos'] ?></a>
+			<a href=""><?= $idioma['en']['contacto'] ?></a>
+		</nav>
+	</body>
+</html>
