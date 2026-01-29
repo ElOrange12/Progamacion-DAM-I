@@ -27,14 +27,18 @@ var contador = 0;
 // Cuando haga click en el boton delante
 botondelante.onclick = function(){
 	// Le quito un elemento al contador
+	console.log(contador)
 	contador--;
+	if(contador < -7){contador = 0;}
 	// Actualizo la posicion del nuevo contenedor
 	nuevo_contenedor.style.left = contador*anchura+"px"
 }
 // Cuando haga click en el boton atras
 botonatras.onclick = function(){
 	// Le quito un elemento al contador
+	console.log(contador)
 	contador++;
+	if(contador > 0){contador = 0;}
 	// Actualizo la posicion del nuevo contenedor
 	nuevo_contenedor.style.left = contador*anchura+"px"
 }
