@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div class="orangecarrusel">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">
+			<img src="imagen1.jpg" alt="Texto alternativo">		  
+		</div>
+		<script>
+			// Cojo el contenedor externo (es un solo elemento)
+			let contenedor = document.querySelector(".orangecarrusel")
+			// Cojo las imagenes de dentro (es un array de elementos)
+			let contenido = document.querySelectorAll(".orangecarrusel img")
+			// Para cada una de la imagenes
+			contenido.forEach(function(elemento){
+				// Quito la imagen del html
+				elemento.remove()
+			})
+		</script>
+	</body>
+</html>
