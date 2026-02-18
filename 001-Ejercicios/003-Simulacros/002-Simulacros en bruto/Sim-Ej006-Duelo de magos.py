@@ -12,12 +12,13 @@ try:
     
 except:
     edad_mago = 100
+    
 clasificacion_mago = ''
 poder_base = 0
     
 ################ Clasificación ################
 
-if edad_mago < 31:
+if edad_mago < 30:
     clasificacion_mago = 'Aprendiz'
     
 elif edad_mago >= 30 and edad_mago < 100:
@@ -27,6 +28,7 @@ else:
     clasificacion_mago = 'Archimago'
 
 print('El mago es un', clasificacion_mago)
+
 ################ Poderes ################
 
 def poderBase(edad_mago):
@@ -35,7 +37,7 @@ def poderBase(edad_mago):
         Entradas: edad_mago
         Salidas: poder_base        
     '''
-    if edad_mago < 31:
+    if edad_mago < 30:
         poder_base = 5
     
     elif edad_mago >= 30 and edad_mago < 100:
@@ -50,6 +52,7 @@ poder_base = poderBase(edad_mago)
 print('El mago', clasificacion_mago, 'tiene un poder base de', poder_base)
    
 ################ Rompimiento del hechizo ################
+
 escudo_magico = 15
 
 for i in range(1, 3):
@@ -61,9 +64,36 @@ for i in range(1, 3):
         
     else:
         print('El mago a usado hechizo de rayo')
-        daño = poder_base // 2
+        daño = poder_base // 3
     
+    # Aserción daño
+    assert isinstance(daño, int) and daño >= 0
     
+    escudo_magico = escudo_magico - daño
     
+    if escudo_magico < 0:
+        escudo_magico = 0
     
+    # Aserción energía escudo
+    assert escudo_magico >= 0
+    
+    print('El escudo pierde', daño, 'puntos de energía')
+    print('Energía restante del escudo:', escudo_magico)
+    
+    if escudo_magico == 0:
+        break
+
+################ Resultado final ################
+
+print('\n===== RESULTADO FINAL =====')
+print('Edad del mago:', edad_mago)
+print('Rango del mago:', clasificacion_mago)
+print('Poder base:', poder_base)
+print('Energía final del escudo:', escudo_magico)
+
+if escudo_magico == 0:
+    print('¡El mago rompe el escudo mágico!')
+    
+else:
+    print('El escudo resiste al duelo relámpago.')
 
