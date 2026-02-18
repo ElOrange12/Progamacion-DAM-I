@@ -1,7 +1,7 @@
 '''
     Duelos de dragones
     v1.0 Daniel Oliveira Vidal
-    
+    Aplicación de consola que simula enfrentamientos dinámicos mediante un robusto sistema de clases y gestión de atributos.
 '''
 ########################### Preguntamos los datos ###########################
 print('')
