@@ -1,0 +1,49 @@
+{"question":"¿Cómo se llama el usuario?","answer":"Se llama Dani."}
+{"question":"¿Qué edad tiene el usuario?","answer":"Tiene 18 años."}
+{"question":"¿En qué año nació?","answer":"Nació en 2007."}
+{"question":"¿Qué está estudiando actualmente?","answer":"Está estudiando DAM (Desarrollo de Aplicaciones Multiplataforma)."}
+{"question":"¿Está estudiando DAW?","answer":"No, está estudiando DAM, no DAW."}
+{"question":"¿En qué país vive actualmente?","answer":"Vive en España."}
+{"question":"¿Cuál es el primer apellido del usuario?","answer":"Oliveira."}
+{"question":"¿De dónde es su abuelo?","answer":"Su abuelo es portugués."}
+{"question":"¿De qué zona concreta es su abuelo?","answer":"Es de un pueblo de Braga, en Portugal."}
+{"question":"¿Qué tipo de trato prefiere?","answer":"Prefiere un trato cercano, informal y natural."}
+{"question":"¿Qué apodos le gustan?","answer":"Le gustan tete, tt, hermano, tío, Dani, Orange, naranjito y naranjote."}
+{"question":"¿Qué apodo no le gusta?","answer":"No le gusta que le llamen bro."}
+{"question":"¿Qué tipo de lenguaje usa normalmente?","answer":"Usa lenguaje coloquial y directo."}
+{"question":"¿Qué temas tecnológicos le interesan?","answer":"Le interesan programación, sistemas, comandos y desarrollo de aplicaciones."}
+{"question":"¿Ha pedido ayuda sobre formateo de USB?","answer":"Sí, ha pedido ayuda para formatear un pendrive e instalar Windows."}
+{"question":"¿Ha tenido problemas con UEFI Shell?","answer":"Sí, ha tenido problemas al arrancar desde un USB y le aparecía UEFI Shell."}
+{"question":"¿Qué versión de Minecraft ha mencionado?","answer":"Ha mencionado la versión 1.21.11."}
+{"question":"¿Qué tipo de dudas de Minecraft suele tener?","answer":"Comandos, debug stick, tiempo, chunks y mecánicas del juego."}
+{"question":"¿Ha pedido ayuda con comandos específicos?","answer":"Sí, ha preguntado por comandos como el debug stick y configuraciones del mundo."}
+{"question":"¿Le interesa cómo funcionan las cosas técnicamente?","answer":"Sí, le gusta entender el funcionamiento técnico detrás de sistemas y comandos."}
+{"question":"¿Ha pedido ayuda para trabajos en inglés?","answer":"Sí, ha pedido ayuda para redactar proposals en inglés."}
+{"question":"¿Le interesan los formatos de datos para IA?","answer":"Sí, le interesa el formato JSON para entrenar modelos."}
+{"question":"¿Qué tipo de modelo quiere simular?","answer":"Un modelo de preentrenamiento tipo pregunta-respuesta personalizado."}
+{"question":"¿Ha hecho preguntas tipo test de manipulación de alimentos?","answer":"Sí, ha preguntado sobre regeneración, temperaturas y muestras testigo."}
+{"question":"¿Le interesa saber salarios medios?","answer":"Sí, ha preguntado por el salario de auxiliar de cocina a media jornada."}
+{"question":"¿Prefiere respuestas claras o largas explicaciones técnicas?","answer":"Prefiere respuestas claras, directas y útiles."}
+{"question":"¿Le gusta experimentar con tecnología?","answer":"Sí, prueba cosas como cargar ISOs en USB y modificar configuraciones."}
+{"question":"¿Tiene interés por la psicología o fenómenos mentales?","answer":"Sí, ha preguntado sobre déjà vu, presentimientos y coincidencias."}
+{"question":"¿Le gustan ejemplos prácticos?","answer":"Sí, entiende mejor con ejemplos prácticos."}
+{"question":"¿Qué estilo de aprendizaje encaja con él?","answer":"Aprendizaje práctico y aplicado a casos reales."}
+{"question":"¿Se interesa por cómo entrenar modelos de IA?","answer":"Sí, quiere entender cómo estructurar datasets para entrenamiento."}
+{"question":"¿Prefiere explicaciones técnicas si el tema lo requiere?","answer":"Sí, especialmente en programación o sistemas."}
+{"question":"¿Le gusta que la conversación sea cercana?","answer":"Sí, le gusta un trato natural y cercano."}
+{"question":"¿Qué entorno técnico suele usar?","answer":"PC de escritorio con Linux y navegador Chrome."}
+{"question":"¿Suele trabajar con código?","answer":"Sí, está formándose como desarrollador."}
+{"question":"¿Qué área de desarrollo está estudiando?","answer":"Desarrollo de aplicaciones multiplataforma."}
+{"question":"¿Le interesa el funcionamiento interno de sistemas operativos?","answer":"Sí, ha mostrado interés en arranque, discos y particiones."}
+{"question":"¿Le gustan los datasets estructurados?","answer":"Sí, especialmente en formato JSON."}
+{"question":"¿Quiere simular un modelo entrenado con información personalizada?","answer":"Sí, quiere un ejemplo de dataset basado en su perfil."}
+{"question":"¿Cómo es su estilo al pedir ayuda?","answer":"Directo, claro y a veces con ejemplos técnicos."}
+{"question":"¿Le interesa entender la lógica detrás de las respuestas?","answer":"Sí, no solo la solución sino el porqué."}
+{"question":"¿Está en etapa formativa?","answer":"Sí, está estudiando y construyendo su base técnica."}
+{"question":"¿Tiene curiosidad técnica elevada?","answer":"Sí, suele profundizar en detalles técnicos."}
+{"question":"¿Le interesa mejorar como desarrollador?","answer":"Sí, busca aprender y entender sistemas y programación."}
+{"question":"¿Interactúa de forma frecuente con herramientas técnicas?","answer":"Sí, especialmente relacionadas con sistemas y desarrollo."}
+{"question":"¿Busca eficiencia en las respuestas?","answer":"Sí, valora respuestas útiles y aplicables."}
+{"question":"¿Le gusta que el asistente adapte el tono a él?","answer":"Sí, prefiere que el tono sea acorde a su estilo."}
+{"question":"¿Tiene interés en el mundo de la IA?","answer":"Sí, quiere entender cómo se entrena y estructura un modelo."}
+
