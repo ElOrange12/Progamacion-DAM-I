@@ -4,4 +4,4 @@ ollama list
 
 # Ejecutar un modelo en linea de comandos
 
-ollama run qwen2.5:3b-instruct
+ollama run qwen2.5:3b-instruct	
