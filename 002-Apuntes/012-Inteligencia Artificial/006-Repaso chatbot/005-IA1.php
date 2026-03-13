@@ -1,46 +1,46 @@
 <?php
-session_start();
+	session_start();
 
-// Si no existe, creo memoria de preguntas y respuestas
-if (!isset($_SESSION['preguntas'])) { $_SESSION['preguntas'] = []; }
-if (!isset($_SESSION['respuestas'])) { $_SESSION['respuestas'] = []; }
+	// Si no existe, creo memoria de preguntas y respuestas
+	if (!isset($_SESSION['preguntas'])) { $_SESSION['preguntas'] = []; }
+	if (!isset($_SESSION['respuestas'])) { $_SESSION['respuestas'] = []; }
 
-$OLLAMA_URL = "http://localhost:11434/api/generate";
-$MODEL = "qwen2.5-coder:7b";
+	$OLLAMA_URL = "http://localhost:11434/api/generate";
+	$MODEL = "qwen2.5-coder:7b";
 
-// Procesar envío
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["mensaje"])) {
-  $mensaje = trim($_POST["mensaje"]);
+	// Procesar envío
+	if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["mensaje"])) {
+	  $mensaje = trim($_POST["mensaje"]);
 
-  if ($mensaje !== "") {
-    // Envio la pregunta a la IA
-    $prompt = $mensaje . ". Resume tu respuesta en una unica frase";
-    $data = [
-      "model" => $MODEL,
-      "prompt" => $prompt,
-      "stream" => false
-    ];
+	  if ($mensaje !== "") {
+		// Envio la pregunta a la IA
+		$prompt = $mensaje . ". Resume tu respuesta en una unica frase";
+		$data = [
+		  "model" => $MODEL,
+		  "prompt" => $prompt,
+		  "stream" => false
+		];
 
-    $ch = curl_init($OLLAMA_URL);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-    $response = curl_exec($ch);
-    curl_close($ch);
+		$ch = curl_init($OLLAMA_URL);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+		$response = curl_exec($ch);
+		curl_close($ch);
 
-    $result = json_decode($response, true);
-    $respuesta = isset($result["response"]) ? $result["response"] : "No se pudo obtener respuesta.";
+		$result = json_decode($response, true);
+		$respuesta = isset($result["response"]) ? $result["response"] : "No se pudo obtener respuesta.";
 
-    // Guardar en sesión
-    $_SESSION['preguntas'][] = $mensaje;
-    $_SESSION['respuestas'][] = $respuesta;
-  }
+		// Guardar en sesión
+		$_SESSION['preguntas'][] = $mensaje;
+		$_SESSION['respuestas'][] = $respuesta;
+	  }
 
-  // Evitar reenvío al recargar
-  header("Location: " . strtok($_SERVER["REQUEST_URI"], "?"));
-  exit;
-}
+	  // Evitar reenvío al recargar
+	  header("Location: " . strtok($_SERVER["REQUEST_URI"], "?"));
+	  exit;
+	}
 ?>
 <!doctype html>
 <html lang="es">
